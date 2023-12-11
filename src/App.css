@@ -1,5 +1,12 @@
-input[type=text],input[type=date],input[type=password],input[type=tel], textarea {
+input[type=text],
+input[type=date],
+input[type=password],
+input[type=tel],
+input[type=number],
+
+textarea {
   width: 100%;
+  
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -7,17 +14,23 @@ input[type=text],input[type=date],input[type=password],input[type=tel], textarea
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  }
-  select{
+}
+input:invalid {
+  border-color:  red;
+}
+
+select {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-top: 6px;
-  margin-bottom: 15px;}
- 
+  margin-bottom: 15px;
+}
 
-input[type=submit],button {
+
+input[type=submit],
+button {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -35,14 +48,68 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  
-  
+
+}
+
+body {
+  display: flex;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+ align-self: start;
  
+}
+
+td {
+  border: 1px solid #ccc;
+  background-color: white;
   
 }
-body{
-  display: flex;
- height: 100vh;
 
-justify-content: center;
-align-items: center;}
+th {
+  background-color: #04AA6D;
+  border: 1px solid #ccc;
+  color: white;
+  padding: 10px;
+  cursor:pointer;
+}
+
+
+.tbleform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  
+}
+
+h1{text-align: center;
+  }
+  form{
+  max-width: 400px;}
+  ul{
+  display: flex;
+margin: 0;}
+  li{
+  list-style: none;
+}
+  a{display: block;
+
+    background-color: #04AA6D;
+padding: 10px;
+font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #ccc;
+}
+a:focus{
+  background-color:#45a049;
+
+}

@@ -1,7 +1,7 @@
 import Login from "./Login.js";
 import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import Worker from "./worker.js";
+import Dashboad from "./Dashboard.js";
 
 function App() {
  const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -14,7 +14,7 @@ function App() {
     {!isLoggedIn ? (
         <Login handleLogin={handleLogin} />
       ) : (
-        <Worker/>
+        <Dashboad/>
       )}
     
    
