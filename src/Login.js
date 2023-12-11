@@ -1,12 +1,13 @@
 import "./App.css";
 import { useState } from 'react';
+import Adminpanell from "./admin-panel";
 function Login({ handleLogin }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = new FormData(document.getElementById("LoginForm"));
 
-    fetch("http://azs.localhost", {
+    fetch("http://azs.localhost/login.php", {
       method: 'POST',
       header: {
         "Content-Type": 'multipart/form-data',
@@ -15,7 +16,7 @@ function Login({ handleLogin }) {
     })
     .then(response => response.json())
       .then(response => {
-        console.log(response);
+        
         if (response) {
           handleLogin(true);
         }
@@ -44,7 +45,8 @@ function Login({ handleLogin }) {
         <input type="hidden" name="formname" value='loginform' />
         <input type="submit" />
       </form>
-    </div></>
+    </div>
+   < Adminpanell/></>
   )
 }
 export default Login;

@@ -1,0 +1,175 @@
+C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe, Version: 8.0.35 (MySQL Community Server - GPL). started with:
+TCP Port: 3307, Named Pipe: MySQL
+Time                 Id Command    Argument
+2023-12-11T16:50:51.938787Z	  303 Query	use azs
+2023-12-11T16:50:51.939207Z	  303 Query	SELECT DATABASE()
+2023-12-11T18:20:37.240661Z	  316 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:20:37.241633Z	  316 Quit	
+2023-12-11T18:20:37.278381Z	  317 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:37.278726Z	  317 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:37.281638Z	  318 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:37.281773Z	  318 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:45.171758Z	  319 Connect	rootе@localhost on azs using TCP/IP
+2023-12-11T18:20:45.171879Z	  319 Connect	Access denied for user 'rootе'@'localhost' (using password: YES)
+2023-12-11T18:20:47.987745Z	  320 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:20:47.988510Z	  320 Quit	
+2023-12-11T18:20:48.022102Z	  321 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:48.022266Z	  321 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:48.022946Z	  322 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:48.023176Z	  322 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:51.174764Z	  323 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:51.174768Z	  324 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:51.174932Z	  323 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:51.175002Z	  324 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:52.117586Z	  325 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:52.117735Z	  325 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:52.118207Z	  326 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:52.118398Z	  326 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:52.998042Z	  327 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:52.998221Z	  327 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:53.018654Z	  328 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:53.018822Z	  328 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:53.576129Z	  330 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:53.576146Z	  329 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:53.576373Z	  330 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:53.576444Z	  329 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:54.726781Z	  331 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:54.726796Z	  332 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:54.727010Z	  331 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:54.727087Z	  332 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:56.129275Z	  334 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:56.129519Z	  334 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:20:56.140497Z	  333 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:20:56.140622Z	  333 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:26:27.021844Z	  335 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:26:27.022606Z	  335 Quit	
+2023-12-11T18:26:37.628422Z	  336 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:26:37.629103Z	  336 Quit	
+2023-12-11T18:26:38.681220Z	  337 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:26:38.682018Z	  337 Quit	
+2023-12-11T18:27:28.651589Z	  338 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:27:28.652206Z	  338 Quit	
+2023-12-11T18:28:23.363268Z	  339 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:28:23.363978Z	  339 Quit	
+2023-12-11T18:28:23.401672Z	  341 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:28:23.402096Z	  341 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:28:23.411164Z	  340 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:28:23.411402Z	  340 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:28:26.844220Z	  342 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:28:26.844395Z	  342 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:28:26.845005Z	  343 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:28:26.845124Z	  343 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:28:33.157839Z	  344 Connect	rootw@localhost on azs using TCP/IP
+2023-12-11T18:28:33.158121Z	  344 Connect	Access denied for user 'rootw'@'localhost' (using password: YES)
+2023-12-11T18:28:38.325160Z	  345 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:28:38.325896Z	  345 Quit	
+2023-12-11T18:28:38.388189Z	  346 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:28:38.388210Z	  347 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:28:38.388402Z	  346 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:28:38.388464Z	  347 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:28:45.783656Z	  348 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:28:45.783691Z	  349 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:28:45.783824Z	  348 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:28:45.783931Z	  349 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:28:47.210088Z	  351 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:28:47.210405Z	  351 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:28:47.221807Z	  350 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:28:47.221989Z	  350 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:32:54.850410Z	  352 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:32:54.851174Z	  352 Quit	
+2023-12-11T18:32:56.381392Z	  353 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:32:56.381882Z	  353 Quit	
+2023-12-11T18:32:56.847860Z	  354 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:32:56.848472Z	  354 Quit	
+2023-12-11T18:32:57.064661Z	  355 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:32:57.065227Z	  355 Quit	
+2023-12-11T18:32:57.297056Z	  356 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:32:57.297895Z	  356 Quit	
+2023-12-11T18:32:59.557997Z	  357 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:32:59.558823Z	  357 Quit	
+2023-12-11T18:34:17.179509Z	  358 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:34:17.180150Z	  358 Quit	
+2023-12-11T18:34:31.577246Z	  359 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:34:31.577993Z	  359 Quit	
+2023-12-11T18:34:33.215285Z	  360 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:34:33.216126Z	  360 Quit	
+2023-12-11T18:34:33.448382Z	  361 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:34:33.449179Z	  361 Quit	
+2023-12-11T18:34:33.636564Z	  362 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:34:33.637119Z	  362 Quit	
+2023-12-11T18:34:38.966120Z	  363 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:34:38.966880Z	  363 Quit	
+2023-12-11T18:34:44.297339Z	  364 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:34:44.297881Z	  364 Quit	
+2023-12-11T18:34:51.448919Z	  365 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:34:51.449623Z	  365 Quit	
+2023-12-11T18:34:57.563778Z	  366 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:34:57.564809Z	  366 Quit	
+2023-12-11T18:35:11.266246Z	  367 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:35:11.266840Z	  367 Quit	
+2023-12-11T18:35:11.310357Z	  368 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:35:11.310542Z	  368 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:35:11.311242Z	  369 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:35:11.311650Z	  369 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:35:16.619775Z	  370 Connect	rootw@localhost on azs using TCP/IP
+2023-12-11T18:35:16.619929Z	  370 Connect	Access denied for user 'rootw'@'localhost' (using password: YES)
+2023-12-11T18:35:19.658691Z	  371 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:35:19.659328Z	  371 Quit	
+2023-12-11T18:35:19.686267Z	  373 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:35:19.686496Z	  373 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:35:19.705935Z	  372 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:35:19.706124Z	  372 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:35:38.833763Z	  374 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:35:38.834269Z	  374 Quit	
+2023-12-11T18:35:39.802602Z	  375 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:35:39.803245Z	  375 Quit	
+2023-12-11T18:35:40.272821Z	  376 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:35:40.273741Z	  376 Quit	
+2023-12-11T18:35:40.488430Z	  377 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:35:40.489165Z	  377 Quit	
+2023-12-11T18:35:41.452167Z	  378 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:35:41.452837Z	  378 Quit	
+2023-12-11T18:35:41.626187Z	  379 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:35:41.626956Z	  379 Quit	
+2023-12-11T18:35:41.812463Z	  380 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:35:41.813021Z	  380 Quit	
+2023-12-11T18:35:43.856480Z	  381 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:35:43.857344Z	  381 Quit	
+2023-12-11T18:35:46.321360Z	  382 Connect	root5@localhost on azs using TCP/IP
+2023-12-11T18:35:46.321638Z	  382 Connect	Access denied for user 'root5'@'localhost' (using password: YES)
+2023-12-11T18:36:01.533594Z	  383 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:36:01.534232Z	  383 Quit	
+2023-12-11T18:36:01.553881Z	  384 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:36:01.554040Z	  384 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:36:01.554158Z	  385 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:36:01.554360Z	  385 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:36:05.777194Z	  386 Connect	rooty@localhost on azs using TCP/IP
+2023-12-11T18:36:05.777344Z	  386 Connect	Access denied for user 'rooty'@'localhost' (using password: YES)
+2023-12-11T18:36:09.518928Z	  387 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:36:09.519727Z	  387 Quit	
+2023-12-11T18:36:09.548812Z	  389 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:36:09.549077Z	  389 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:36:09.565362Z	  388 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:36:09.565578Z	  388 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:36:12.493260Z	  391 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:36:12.493429Z	  391 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:36:12.502450Z	  390 Connect	@localhost on azs using TCP/IP
+2023-12-11T18:36:12.502841Z	  390 Connect	Access denied for user ''@'localhost' (using password: NO)
+2023-12-11T18:36:45.574507Z	  392 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:36:45.575332Z	  392 Quit	
+2023-12-11T18:36:46.293535Z	  393 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:36:46.294121Z	  393 Quit	
+2023-12-11T18:36:46.479445Z	  394 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:36:46.480203Z	  394 Quit	
+2023-12-11T18:36:46.682114Z	  395 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:36:46.682896Z	  395 Quit	
+2023-12-11T18:37:07.413047Z	  396 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:37:07.413706Z	  396 Quit	
+2023-12-11T18:52:26.932514Z	  397 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:52:26.933528Z	  397 Quit	
+2023-12-11T18:52:30.552455Z	  398 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:52:30.553151Z	  398 Quit	
+2023-12-11T18:52:31.613185Z	  399 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:52:31.613807Z	  399 Quit	
+2023-12-11T18:52:37.629813Z	  400 Connect	root@localhost on azs using TCP/IP
+2023-12-11T18:52:37.630514Z	  400 Quit	

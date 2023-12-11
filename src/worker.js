@@ -10,7 +10,7 @@ function Worker(){
        formworker.append('action', 'fetchData');
 
     
-       fetch("http://azs.localhost", {
+       fetch("http://azs.localhost/worker.php", {
           method: 'POST',
           header: {
             "Content-Type": 'multipart/form-data',
@@ -30,7 +30,7 @@ function Worker(){
 
        
       
-       fetch("http://azs.localhost", {
+       fetch("http://azs.localhost/worker.php", {
           method: 'POST',
           header: {
             "Content-Type": 'multipart/form-data',
@@ -72,7 +72,7 @@ return(
         <label>Дата найма
             <input type="date"  name="workerdateofhirning" />
         </label>
-        <input type="hidden" name="formname" value='workerform' />
+       
         <button onClick={(event)=>handleSubmit("add",event)} >Добавить</button>
         <button onClick={(event)=>handleSubmit("delite",event)} >Удалить</button>
        
