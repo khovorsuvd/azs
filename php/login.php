@@ -2,17 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 ?>
 <?php
-$host = 'localhost:3307'; // Адрес вашей MySQL базы данных
-$username = 'root'; // Ваше имя пользователя MySQL
-$password = '1111'; // Ваш пароль MySQL
-$database = 'azs'; // Ваша база данных
 
-// Подключение к MySQL
-$connection = new mysqli($host, $username, $password, $database);
-
-if ($connection->connect_error) {
-   die("Ошибка подключения к базе данных: " . $connection->connect_error);
-}
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -22,14 +12,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
    switch ($data) {
       case "loginform":
-         $username = $_POST[`username`];
+         $username = $_POST["username"];
          $password1 = $_POST["password"];
-         $query = "select * from login WHERE user_name ='$username' AND password_='$password1'";
-         $result = $connection->query($query);
-         if ($result->num_rows > 0) {
-            echo true;
-         } else {
+         $host = 'localhost:3307'; // Адрес вашей MySQL базы данных
+         $username = $_POST["username"];
+         $password = $_POST["password"];
+          // Ваш пароль MySQL
+         $database = 'azs'; // Ваша база данных
+         
+         // Подключение к MySQL
+         $connection = new mysqli($host, $username, $password, $database);
+         if ($connection->connect_error){
             echo false;
+         } else {
+            echo true;
          }
          break;
       case "workerform":
@@ -449,5 +445,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 
-$connection->close();
 ?>

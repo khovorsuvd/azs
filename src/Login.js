@@ -13,9 +13,9 @@ function Login({ handleLogin }) {
       },
       body: form
     })
-    .then(response => response.text())
+    .then(response => response.json())
       .then(response => {
-        
+        console.log(response);
         if (response) {
           handleLogin(true);
         }
