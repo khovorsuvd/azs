@@ -200,15 +200,15 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 
 
 INSERT INTO productsell VALUES
-("Вода минеральная","3.5","10","6","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1"),
-("Вода минеральная","3.5","10","6","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1"),
-("Чипсы","4","14","7","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","3"),
 ("coffee","3","15","372","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","4"),
-("Печенье","4","13","10","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1"),
-("Чипсы","4","14","7","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1"),
-("Вода минеральная","3.5","10","6","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1"),
 ("моторное масло","40","8","10","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1"),
-("coffee","3","15","372","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","4");
+("Вода минеральная","3.5","10","6","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1"),
+("Чипсы","4","14","7","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1"),
+("Печенье","4","13","10","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1"),
+("coffee","3","15","372","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","4"),
+("Чипсы","4","14","7","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","3"),
+("Вода минеральная","3.5","10","6","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1"),
+("Вода минеральная","3.5","10","6","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00","1");
 
 
 
@@ -235,13 +235,15 @@ CREATE TABLE `sale` (
   CONSTRAINT `sale_ibfk_3` FOREIGN KEY (`customer_cardaccount`) REFERENCES `customer` (`Id_customer`),
   CONSTRAINT `sale_ibfk_4` FOREIGN KEY (`worker`) REFERENCES `worker` (`worker_name`),
   CONSTRAINT `sale_ibfk_5` FOREIGN KEY (`contract_id_contract`) REFERENCES `contract` (`id_contract`)
-) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci KEY_BLOCK_SIZE=2;
+) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci KEY_BLOCK_SIZE=2;
 
 
 INSERT INTO sale VALUES
 ("63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00"),
 ("67","1","2023-12-12","1","газ02","60","1","1","Tanya Andreeva","84.00"),
-("68","1","2023-12-12","1","газ03","60","1","1","Tanya Andreeva","96.00");
+("68","1","2023-12-12","1","газ03","60","1","1","Tanya Andreeva","96.00"),
+("70","1","2023-12-12","1","газ01","40","1","1","Tanya Andreeva","40.00"),
+("72","1","2023-12-12","1","газ02","80","1","1","Tanya Andreeva","112.00");
 
 
 
@@ -318,7 +320,9 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 INSERT INTO workersell VALUES
 ("Tanya Andreeva","63","1","2023-12-12","","газ01","5","1","1","Tanya Andreeva","26.00"),
 ("Tanya Andreeva","67","1","2023-12-12","1","газ02","60","1","1","Tanya Andreeva","84.00"),
-("Tanya Andreeva","68","1","2023-12-12","1","газ03","60","1","1","Tanya Andreeva","96.00");
+("Tanya Andreeva","68","1","2023-12-12","1","газ03","60","1","1","Tanya Andreeva","96.00"),
+("Tanya Andreeva","70","1","2023-12-12","1","газ01","40","1","1","Tanya Andreeva","40.00"),
+("Tanya Andreeva","72","1","2023-12-12","1","газ02","80","1","1","Tanya Andreeva","112.00");
 
 
 

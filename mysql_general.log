@@ -7074,3 +7074,133 @@ LIMIT 0, 1000
 2023-12-13T09:03:37.239056Z	  752 Query	SELECT * FROM workerview
 2023-12-13T09:03:37.239286Z	  752 Query	SHOW CREATE TABLE workerview
 2023-12-13T09:03:37.239976Z	  752 Quit	
+2023-12-13T09:16:47.092666Z	  753 Connect	root@localhost on azs using TCP/IP
+2023-12-13T09:16:47.092890Z	  753 Quit	
+2023-12-13T09:16:48.557470Z	  754 Connect	root@localhost on azs using TCP/IP
+2023-12-13T09:16:48.557752Z	  754 Query	select * from Worker
+2023-12-13T09:16:48.557836Z	  755 Connect	root@localhost on azs using TCP/IP
+2023-12-13T09:16:48.558027Z	  754 Quit	
+2023-12-13T09:16:48.558059Z	  755 Query	select * from Worker
+2023-12-13T09:16:48.558274Z	  755 Quit	
+2023-12-13T09:18:50.575447Z	  682 Query	SHOW FULL COLUMNS FROM `azs`.`workerview`
+2023-12-13T09:18:54.955063Z	  684 Query	SELECT * FROM azs.worker
+LIMIT 0, 1000
+2023-12-13T09:18:54.966977Z	  682 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 684
+2023-12-13T09:18:54.967449Z	  682 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 278
+2023-12-13T09:18:54.967664Z	  682 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 278
+2023-12-13T09:18:54.968194Z	  682 Query	SHOW INDEX FROM `azs`.`worker`
+2023-12-13T09:19:45.276209Z	  756 Connect	root@localhost on azs using TCP/IP
+2023-12-13T09:19:45.276528Z	  756 Query	select * from  Worker where position='seller'
+2023-12-13T09:19:45.276862Z	  756 Query	select * from  Worker where position='seller'
+2023-12-13T09:19:45.277007Z	  756 Quit	
+2023-12-13T10:21:01.746211Z	  757 Connect	root@localhost on azs using TCP/IP
+2023-12-13T10:21:01.746963Z	  757 Query	select * from  Worker where position='seller'
+2023-12-13T10:21:01.747750Z	  757 Query	select * from  Worker where position='seller'
+2023-12-13T10:21:01.748227Z	  757 Quit	
+2023-12-13T10:21:14.035379Z	  758 Connect	root@localhost on azs using TCP/IP
+2023-12-13T10:21:14.035993Z	  758 Query	select * from  Worker where position='admin'
+2023-12-13T10:21:14.036719Z	  758 Query	select * from  Worker where position='admin'
+2023-12-13T10:21:14.037171Z	  758 Quit	
+2023-12-13T10:28:13.096697Z	  682 Query	SHOW CREATE FUNCTION `azs`.`get_product_quantity`
+2023-12-13T10:46:00.452024Z	  682 Query	SHOW CREATE PROCEDURE `azs`.`addCompanyFuel`
+2023-12-13T10:46:43.697425Z	  684 Query	SELECT * FROM azs.fullsale
+LIMIT 0, 1000
+2023-12-13T10:46:43.706363Z	  682 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 684
+2023-12-13T10:46:43.708565Z	  682 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 290
+2023-12-13T10:46:43.709259Z	  682 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 290
+2023-12-13T10:46:43.711149Z	  682 Query	SHOW INDEX FROM `azs`.`fullsale`
+2023-12-13T10:52:22.984212Z	  684 Query	SELECT * FROM azs.sale
+LIMIT 0, 1000
+2023-12-13T10:52:22.991737Z	  682 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 684
+2023-12-13T10:52:22.993011Z	  682 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 293
+2023-12-13T10:52:22.993695Z	  682 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 293
+2023-12-13T10:52:22.994936Z	  682 Query	SHOW INDEX FROM `azs`.`sale`
+2023-12-13T10:53:14.797812Z	  684 Query	set autocommit=0
+2023-12-13T10:53:16.454973Z	  684 Prepare	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('69', '1', '2023-12-12', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '')
+2023-12-13T10:53:16.455323Z	  684 Execute	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('69', '1', '2023-12-12', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '')
+2023-12-13T10:53:16.457125Z	  684 Query	rollback
+2023-12-13T10:53:16.457528Z	  684 Close stmt	
+2023-12-13T10:53:18.370439Z	  684 Query	set autocommit=1
+2023-12-13T10:53:23.543734Z	  684 Query	set autocommit=0
+2023-12-13T10:53:24.903873Z	  684 Prepare	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('69', '1', '2023-12-12', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '')
+2023-12-13T10:53:24.903986Z	  684 Execute	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('69', '1', '2023-12-12', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '')
+2023-12-13T10:53:24.905000Z	  684 Query	rollback
+2023-12-13T10:53:24.905294Z	  684 Close stmt	
+2023-12-13T10:53:51.846227Z	  684 Query	set autocommit=1
+2023-12-13T10:54:07.136819Z	  684 Query	set autocommit=0
+2023-12-13T10:54:08.493369Z	  684 Prepare	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('70', '1', '', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '')
+2023-12-13T10:54:08.493538Z	  684 Execute	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('70', '1', '', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '')
+2023-12-13T10:54:08.494869Z	  684 Query	rollback
+2023-12-13T10:54:08.495235Z	  684 Close stmt	
+2023-12-13T10:54:22.107369Z	  684 Query	set autocommit=1
+2023-12-13T10:54:31.115864Z	  684 Query	set autocommit=0
+2023-12-13T10:54:32.186756Z	  684 Prepare	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('70', '1', '2023-12-12', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '')
+2023-12-13T10:54:32.186855Z	  684 Execute	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('70', '1', '2023-12-12', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '')
+2023-12-13T10:54:32.187952Z	  684 Query	rollback
+2023-12-13T10:54:32.188216Z	  684 Close stmt	
+2023-12-13T10:54:35.288431Z	  684 Query	set autocommit=1
+2023-12-13T10:54:39.204081Z	  684 Query	set autocommit=0
+2023-12-13T10:54:40.861151Z	  684 Prepare	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('70', '1', '2023-12-12', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '')
+2023-12-13T10:54:40.861324Z	  684 Execute	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('70', '1', '2023-12-12', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '')
+2023-12-13T10:54:40.862438Z	  684 Query	rollback
+2023-12-13T10:54:40.862795Z	  684 Close stmt	
+2023-12-13T10:54:41.986060Z	  684 Query	set autocommit=1
+2023-12-13T10:54:47.661865Z	  684 Query	set autocommit=0
+2023-12-13T10:54:48.872601Z	  684 Prepare	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('70', '1', '2023-12-12', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '96.00')
+2023-12-13T10:54:48.872720Z	  684 Execute	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('70', '1', '2023-12-12', '1', 'газ01', '40', '1', '1', 'Tanya Andreeva', '96.00')
+2023-12-13T10:54:48.881674Z	  684 Query	SELECT f.prise INTO fuel_prise
+    FROM fuel f
+    WHERE f.code_fuel = NEW.code_fuel
+2023-12-13T10:54:48.884284Z	  684 Query	commit
+2023-12-13T10:54:48.888765Z	  684 Close stmt	
+2023-12-13T10:54:48.890167Z	  684 Query	SELECT * FROM azs.sale
+LIMIT 0, 1000
+2023-12-13T10:54:48.890915Z	  682 Query	SHOW INDEX FROM `azs`.`sale`
+2023-12-13T10:54:50.270275Z	  684 Query	set autocommit=1
+2023-12-13T10:56:17.515510Z	  684 Query	SELECT * FROM azs.sale
+LIMIT 0, 1000
+2023-12-13T10:56:17.526086Z	  682 Query	SHOW INDEX FROM `azs`.`sale`
+2023-12-13T10:56:47.945697Z	  684 Query	set autocommit=0
+2023-12-13T10:56:48.858704Z	  684 Prepare	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('72', '1', '2023-12-12', '1', 'газ01', '80', '1', '1', 'Tanya Andreeva', '40.00')
+2023-12-13T10:56:48.858803Z	  684 Execute	INSERT INTO `azs`.`sale` (`id_sale`, `Code_gas_station`, `date_of_sale`, `customer_cardaccount`, `code_fuel`, `quantityFuel`, `contract_id_contract`, `contract_id_customer`, `worker`, `summ`) VALUES ('72', '1', '2023-12-12', '1', 'газ01', '80', '1', '1', 'Tanya Andreeva', '40.00')
+2023-12-13T10:56:48.858978Z	  684 Query	SELECT f.prise INTO fuel_prise
+    FROM fuel f
+    WHERE f.code_fuel = NEW.code_fuel
+2023-12-13T10:56:48.859874Z	  684 Query	commit
+2023-12-13T10:56:48.871505Z	  684 Close stmt	
+2023-12-13T10:56:48.872823Z	  684 Query	SELECT * FROM azs.sale
+LIMIT 0, 1000
+2023-12-13T10:56:48.873636Z	  682 Query	SHOW INDEX FROM `azs`.`sale`
+2023-12-13T10:56:49.795457Z	  684 Query	set autocommit=1
+2023-12-13T10:56:58.142453Z	  684 Query	set autocommit=0
+2023-12-13T10:56:59.438653Z	  684 Prepare	UPDATE `azs`.`sale` SET `code_fuel` = 'газ02' WHERE (`id_sale` = '72')
+2023-12-13T10:56:59.438745Z	  684 Execute	UPDATE `azs`.`sale` SET `code_fuel` = 'газ02' WHERE (`id_sale` = '72')
+2023-12-13T10:56:59.439357Z	  684 Query	SELECT f.prise INTO fuel_prise
+        FROM fuel f
+        WHERE f.code_fuel = NEW.code_fuel
+2023-12-13T10:56:59.440289Z	  684 Query	commit
+2023-12-13T10:56:59.457214Z	  684 Close stmt	
+2023-12-13T10:56:59.458521Z	  684 Query	SELECT * FROM azs.sale
+LIMIT 0, 1000
+2023-12-13T10:56:59.459199Z	  682 Query	SHOW INDEX FROM `azs`.`sale`
+2023-12-13T10:57:00.455805Z	  684 Query	set autocommit=1
+2023-12-13T11:08:12.588698Z	  684 Query	SELECT * FROM azs.fullsale
+LIMIT 0, 1000
+2023-12-13T11:08:12.606158Z	  682 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 684
+2023-12-13T11:08:12.607526Z	  682 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 389
+2023-12-13T11:08:12.608127Z	  682 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 389
+2023-12-13T11:08:12.609801Z	  682 Query	SHOW INDEX FROM `azs`.`fullsale`
+2023-12-13T11:08:14.418905Z	  684 Query	SELECT * FROM azs.productsell
+LIMIT 0, 1000
+2023-12-13T11:08:14.427944Z	  682 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 684
+2023-12-13T11:08:14.429149Z	  682 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 392
+2023-12-13T11:08:14.429821Z	  682 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 392
+2023-12-13T11:08:14.431025Z	  682 Query	SHOW INDEX FROM `azs`.`productsell`
+2023-12-13T11:08:53.906619Z	  684 Query	SELECT * FROM azs.fullsale
+LIMIT 0, 1000
+2023-12-13T11:08:53.914452Z	  682 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 684
+2023-12-13T11:08:53.915570Z	  682 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 395
+2023-12-13T11:08:53.916248Z	  682 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 395
+2023-12-13T11:08:53.917742Z	  682 Query	SHOW INDEX FROM `azs`.`fullsale`
+2023-12-13T11:08:59.689088Z	  682 Query	SHOW CREATE VIEW `azs`.`fullsale`
+2023-12-13T11:08:59.690402Z	  682 Query	SHOW SESSION VARIABLES LIKE 'sql_mode'
