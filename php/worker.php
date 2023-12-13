@@ -20,6 +20,8 @@ $workername = $_POST["workername"];
 $workerdateofbirth = $_POST["workerdateofbirth"];
 $workertel = $_POST["workertel"];
 $workerdateofhirning = $_POST["workerdateofhirning"];
+$mesqlf = $_POST["sql"];
+
 function QueryRQSULT($query, $connection)
 {
     $result = $connection->query($query);
@@ -49,6 +51,14 @@ switch ($action) {
         QueryRQSULT($query, $connection);
 
         break;
+        case "sqlbutton":
+            $query ="$mesqlf";
+            $result = $connection->query($query);
+    
+           
+            QueryRQSULT($query, $connection);
+    
+            break;
     case "delite":
 
         $query = "DELETE FROM Worker where position='$workerjob'and worker_name='$workername'and date_of_birth='$workerdateofbirth'and tel='$workertel'and date_of_offer='$workerdateofhirning';";

@@ -51,6 +51,14 @@ return(
 
     <div className="tbleform">
     <form id="WorkerForm"  >
+
+    <label>sql
+            <input type="text" name="sql"/>
+            
+        
+        </label> 
+        <button onClick={(event)=>handleSubmit("sqlbutton",event)} >sql</button>
+
     <select name="workerjob">
     <option value="">Должность:</option>
     <option value='seller'>seller</option>
