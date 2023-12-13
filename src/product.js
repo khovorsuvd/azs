@@ -10,7 +10,7 @@ function Products(){
        formdata.append('action', 'fetchData');
 
     
-       fetch("http://azs.localhost", {
+       fetch("http://azs.localhost/product.php", {
           method: 'POST',
           header: {
             "Content-Type": 'multipart/form-data',
@@ -18,6 +18,7 @@ function Products(){
           body: formdata
         })
         .then(response => response.json())
+       
          .then(response =>setTableData(response));
 
       }, []);
@@ -30,7 +31,7 @@ function Products(){
 
        
       
-       fetch("http://azs.localhost", {
+       fetch("http://azs.localhost/product.php", {
           method: 'POST',
           header: {
             "Content-Type": 'multipart/form-data',

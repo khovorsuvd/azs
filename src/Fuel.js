@@ -11,7 +11,7 @@ function Fuel(){
        formdata.append('action', 'fetchData');
 
     
-       fetch("http://azs.localhost", {
+       fetch("http://azs.localhost/fuel.php", {
           method: 'POST',
           header: {
             "Content-Type": 'multipart/form-data',
@@ -34,7 +34,7 @@ function Fuel(){
 
        
       
-       fetch("http://azs.localhost", {
+       fetch("http://azs.localhost/fuel.php", {
           method: 'POST',
           header: {
             "Content-Type": 'multipart/form-data',

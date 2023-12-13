@@ -1,6 +1,6 @@
 import "./App.css";
-import { useState } from 'react';
-import Adminpanell from "./admin-panel";
+
+
 function Login({ handleLogin }) {
 
   const handleSubmit = (event) => {
@@ -46,7 +46,7 @@ function Login({ handleLogin }) {
         <input type="submit" />
       </form>
     </div>
-   < Adminpanell/></>
+   </>
   )
 }
 export default Login;

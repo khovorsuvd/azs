@@ -8,6 +8,7 @@ import Products from './product.js';
 import Sale from './sale.js';
 import Fuelsuppliers from './fuelsuppliers.js';
 import Fuel from './Fuel.js';
+import Admin from './admin.js';
  function Dashboad(){
 return(
 <BrowserRouter>
@@ -18,6 +19,7 @@ return(
           <Route path="sale" element={<Sale/>} />
           <Route path='fuelsuppliers' element={<Fuelsuppliers/>}/>
           <Route path='fuel' element={<Fuel/>}/>
+          <Route path='admin' element={<Admin/>}/>
         </Route>
   </Routes>
 </BrowserRouter>

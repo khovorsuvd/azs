@@ -20,6 +20,9 @@ const Layout = () => {
           <li>
             <Link to="/fuel">Топливо</Link>
           </li>
+          <li>
+            <Link to="/admin">выгрузить бд</Link>
+          </li>
           
         </ul>
       </nav>

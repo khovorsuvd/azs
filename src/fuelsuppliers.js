@@ -10,7 +10,7 @@ function Fuelsuppliers(){
        formdata.append('action', 'fetchData');
 
    
-      fetch("http://azs.localhost", {
+      fetch("http://azs.localhost/fuelsuppliers.php", {
          method: 'POST',
          header: {
            "Content-Type": 'multipart/form-data',
@@ -30,7 +30,7 @@ function Fuelsuppliers(){
 
       
      
-      fetch("http://azs.localhost", {
+      fetch("http://azs.localhost/fuelsuppliers.php", {
          method: 'POST',
          header: {
            "Content-Type": 'multipart/form-data',
